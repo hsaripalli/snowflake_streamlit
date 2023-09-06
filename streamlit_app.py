@@ -18,6 +18,10 @@ st.multiselect('Pick some fruits:', list(my_fruit_list.index))
 
 st.dataframe(my_fruit_list)
 
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+st.text(fruityvice_response)
+
 
 
 

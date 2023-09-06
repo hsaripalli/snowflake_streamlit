@@ -28,7 +28,10 @@ import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 st.text(fruityvice_response.json())
 
-
+#Normalize json data
+fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
+#Display normalized json as a dataframe
+st.dataframe(fruityvice_normalized_
 
 
 
